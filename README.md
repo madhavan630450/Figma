@@ -1,7 +1,7 @@
 # Ex09 Event Registration Web Application
-# Date: 15.05.2025
 # Name: MARIMUTHU MATHAVAN
-# Regno: 212224230153
+# Date: 15-05-2025
+## Regno: 212224230153
 # AIM:
 To design, develop and deploy a web application for event registration.
 
@@ -32,6 +32,99 @@ Figma
 
 # CODE:
 ```
+HTML CODE :
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Day Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background: linear-gradient(green, lightgreen);
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+        }
+
+        .button {
+            background-color: #1f9d55;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .social-icons img {
+            width: 25px;
+            margin: 5px;
+        }
+
+        .logo {
+            width: 80px;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Card 1: Welcome -->
+    <div class="card">
+        <img src="logo.jpg" alt="Saveetha Logo" class="logo"> <!-- Replace with correct logo path -->
+        <h2>SAVEETHA ENGINEERING COLLEGE</h2>
+        <p><strong>Event day Registration</strong></p>
+        <button class="button">LOGIN</button>
+        <button class="button">REGISTER</button>
+        <p>FOLLOW US ON:</p>
+        <div class="social-icons">
+            <img src="facebook-icon.png" alt="Facebook">
+            <img src="instagram-icon.png" alt="Instagram">
+            <img src="youtube-icon.png" alt="YouTube">
+        </div>
+    </div>
+
+    <!-- Card 2: Events -->
+    <div class="card">
+        <h2>LIST OF EVENTS</h2>
+        <p>Workshop on web development using MERN</p>
+        <p>MERN vs MEAN: What? Why? How?</p>
+        <p>Opportunities for aspiring Web developer</p>
+    </div>
+
+    <!-- Card 3: Requirements -->
+    <div class="card">
+        <h2>REQUIREMENTS</h2>
+        <p>LAPTOP WITH STABLE INTERNET CONNECTION</p>
+        <p>BASIC KNOWLEDGE IN WEB DEVELOPMENT</p>
+    </div>
+
+    <!-- Card 4: When -->
+    <div class="card">
+        <h2>WHEN?</h2>
+        <p>15-11-2024<br>FRIDAY<br>08:00am - 03:00pm</p>
+    </div>
+
+</body>
+</html>
+
+CSS CODE :
 .container {
     display: flex;
     flex-direction: column;
